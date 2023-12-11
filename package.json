@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "puppeteer": "^21.6.0"
+  },
+  "name": "spider",
+  "version": "1.0.0",
+  "main": "gov.cn.js",
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-egg": "^13.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node gov.cn.js"
+  },
+  "author": "shplume",
+  "license": "ISC",
+  "description": "a javascript"
+}
