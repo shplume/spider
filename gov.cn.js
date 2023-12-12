@@ -3,8 +3,9 @@ const puppeteer = require('puppeteer');
 const print = console.log;
 
 (async () => {
-  // Launch the browser and open a new blank page
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    headless: 'new',
+  });
   const page = await browser.newPage();
 
   const url = 'https://www.gov.cn/';
@@ -12,7 +13,6 @@ const print = console.log;
   const selectType = 'ul';
 
   try {
-    // Navigate the page to a URL
     await page.goto(url);
 
     const container = await page.$(targetID);
