@@ -2,5 +2,9 @@
   "extends": [
     "eslint-config-egg",
     "eslint-config-egg/lib/rules/enforce-node-prefix"
-  ]
+  ],
+  "env": {
+    "brower": true,
+    "node": true
+  }
 }
